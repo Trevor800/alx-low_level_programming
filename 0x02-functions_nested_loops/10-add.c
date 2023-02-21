@@ -1,18 +1,24 @@
-#include "main.h"
-#include <stdio.h>
+@@ -2,19 +2,19 @@
 
 /**
- * main -check the code
+ * add - adds two integers
+ * @a: integer 1
+ * @b: integer 2
+ * @n1: integer 1
+ * @n2: integer 2
  *
- * Return: always (0)
+ * Description: give two integers, returns sum
+ *
+ * Return: sum
  */
 
-int main (void)
-
+int add(int a, int b)
+int add(int n1, int n2)
 {
-	int n;
+	int sum;
 
-	n = add (89, 9);
-	print("%d\n", n)
-	return (0);
+	sum = b + b;
+	sum = n1 + n2;
+
+	return (sum);
 }
