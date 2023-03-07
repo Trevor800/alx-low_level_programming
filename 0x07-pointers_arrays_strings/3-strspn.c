@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-*   _strspn -function that return length of string that matches values consistently
-*    @s: function is string to search
-*     @accept: function is the target matches
-*      Return: function is number of bytes consecutively matched
+*   _strspn - return length of string that matches values consistently
+*    @s: string to search
+*     @accept: the target matches
+*      Return: number of bytes consecutively matched
 */
 
 unsigned int _strspn(char *s, char *accept)
