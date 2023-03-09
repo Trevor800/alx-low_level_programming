@@ -1,24 +1,19 @@
-/*
- * File: 0-puts_recursion.c
- * Auth: sam
- */
-
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _puts_recursion - function prints a string, followed by a new line.
- * @s: function is the string to be printed.
+ * _puts_recursion - function that print words in new line
+ * @s: first argument
+ * Return: zero always
  */
 
 void _puts_recursion(char *s)
 {
-	if (*s)
-	{
-		_putchar(*s);
-		_puts_recursion(s + 1);
-	}
-
-	else
-		_putchar("\n");
+        if (*s == '\0')
+        {
+                putchar('\n');
+                return;
+        }
+        putchar(*s);
+        _puts_recursion(s + 1);
 }
-
