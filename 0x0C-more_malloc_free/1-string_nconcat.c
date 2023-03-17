@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_nconcat - function that concatenates two strings
+ * string_nconcat - concatenates two strings
  * @s1: destination string
  * @s2: source string
  * @n: number of bytes from s2 to be copied
@@ -33,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 }
 
 /**
- * _strlen - function returns the length of a string
+ * _strlen - returns the length of a string
  * @s: string s
  * Return: length of string
  */
