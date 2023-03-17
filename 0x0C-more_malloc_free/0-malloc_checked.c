@@ -2,7 +2,7 @@
 
 /**
  * malloc_checked - function that allocates memory using malloc
- * @b: function of number of bytes to be malloced
+ * @b: number of bytes to be malloced
  * Return: returns a void pointer
  */
 void *malloc_checked(unsigned int b)
@@ -10,7 +10,7 @@ void *malloc_checked(unsigned int b)
 	void *ptr;
 
 	ptr = malloc(b);
-	if (!ptr)
+	if (ptr == Null)
 		exit(98);
 	return (ptr);
 }
