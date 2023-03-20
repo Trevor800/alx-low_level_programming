@@ -1,8 +1,12 @@
 #include <stdio.h>
 
-int main() {
-    // write C code here
-    printf("2-main.c");
-    
-    return 0;
+/**
+ * main - print file name
+ * Return:0
+ */
+
+int main(void)
+{
+printf("%s\n", __FILE__);
+return (0);
 }
