@@ -15,7 +15,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	while (power != 0)
 	{
-		jey =+ (power & 1);
+		jey += (power & 1);
 		power = power >> 1;
 	}
 	return (jey);
