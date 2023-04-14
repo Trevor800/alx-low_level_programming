@@ -9,25 +9,25 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd;
-	ssize_t newFile;
+	int newFile;
+	int wr;
 
 	if (filename == NULL)
 		return (-1);
-	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-	if (fd == -1)
-		return (-1);
-	if (text_content != NULL)
-	{
-		int newFile;
 
-		while (text_content[newFile])
+	newFile = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+	if (text_content != NULL || 0)
+	{
+		int len = 0;
+
+		while (text_content[len])
 		{
-			newFile++;
+			len++;
 		}
-		fd = write(newFile, text_content, newFile);
+		wr = write(len, text_content, newFile);
 	}
-	if (fd == -1 || newFile == -1)
+
+	if (newFile == -1 || wr == -1)
 	{
 		close(newFile);
 		return (-1);
