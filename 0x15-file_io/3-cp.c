@@ -21,7 +21,7 @@ if (src == -1)
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 	exit(98);
 }
-final = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0644); /*rw-rw-r--*/
+final = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664); /*rw-rw-r--*/
 
 while ((rd_bytes = read(src, buffer, BUFFER_SIZE)) > 0)
 {
