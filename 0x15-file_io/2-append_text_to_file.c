@@ -10,14 +10,14 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int newFile, len = 0;
 	ssize_t wr;
+	int newFile, len = 0;
 
-	if (filename == 0)
-		return (-1);
 	newFile = open(filename, O_WRONLY | O_APPEND);
 	if (newFile == -1)
 	return (-1);
+	if (filename == 0)
+		return (-1);
 
 	if (text_content != 0)
 	{
