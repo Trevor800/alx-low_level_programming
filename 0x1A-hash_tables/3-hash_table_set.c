@@ -33,7 +33,7 @@ ht->array[i]->value = value_copy;
 return (1);
 }
 }
-    
+
 new = malloc(sizeof(hash_node_t));
 if (new == NULL)
 {
