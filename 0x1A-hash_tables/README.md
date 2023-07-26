@@ -1,3 +1,6 @@
+Hash Table
+
+The foundation of a Python dictionary or set is a hash table, also known as a hash map. A hash table is a data structure that uses a hash function to map keys to their corresponding values. It provides efficient insertion, deletion, and retrieval of elements based on their keys.
 Hash tables
 All solutions done and submitted correctly
 If you want to test for collisions, here are some strings that collide using the djb2 algorithm:
